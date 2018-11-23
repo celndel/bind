@@ -6,3 +6,14 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+
+zone "lopez.local" {
+
+	type master;
+	file "db.lopez.local";
+};
+
+zone "5.16.172.in-addr.arpa" {
+	type master;
+	file "db.inversa";
+};

@@ -1,0 +1,16 @@
+;
+; BIND reverse data file for broadcast zone
+;
+$TTL	604800
+@	IN	SOA	lopez.local root.lopez.local. (
+		     2018112301		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@       	IN	NS	ns.lopez.local.
+ns      	IN	A	172.16.5.10
+dserver00       IN 	A	172.16.5.10
+uclient01       IN 	A	172.16.5.20
+
